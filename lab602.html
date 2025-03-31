@@ -1,9 +1,9 @@
 <!doctype html>
 <html>
 <head>
-<title>...</title>
+<title>
+</title>
 <style>
-...
 </style>
 <script
 src="">
@@ -11,9 +11,19 @@ src="">
   <script
 src= "https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
     <script>
+      
+$(document).ready( function() {
+// your code will go in here.
+$("#appear").click( function() {
+// if someone clicks on appear, this runs!
+console.log("someone clicked on button appear.");
+  $("#hidden_text").text("Live Long and Prosper.");
+  });
+});
 </script>
+  
 </head>
 <body>
-
+<button id="button1">Click here to do something.</button>
 </body>
 </html>
