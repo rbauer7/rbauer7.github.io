@@ -15,7 +15,7 @@
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
-         $(document)ready( function() {
+         $(document)ready.click( function() {
               // this is the secret word!
               word =  "bluebird";
               blank = "- - - - - - - -";
@@ -33,10 +33,10 @@
               gameLost = false;
                    
               // when a user clicks on a letter... this is where everything happens!
-              $("letter")click( function() {
+              $("letter").click( function() {
 
                   // check if the game has been won or lost
-                  if (gameWon != true & gameLost != true) {
+                  if (gameWon != true && gameLost != true) {
                     // erase the info box
 
                 
@@ -51,7 +51,7 @@
 
                     // if the letter isn't in the word, reduce
                     // the number of tries and check if they lost
-                    } else if (! wordincludes(A,C,F,G,H,J,K,L,M,N,O,P,Q,S,T,V,W,X,Y,Z)) {
+                    } else if (wordincludes(A,C,F,G,H,J,K,L,M,N,O,P,Q,S,T,V,W,X,Y,Z)) {
 
                       // reduce the number of remaining tries by 1
 
