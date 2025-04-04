@@ -9,7 +9,7 @@
               padding: 20px;
             }
       #info { padding: 20px; 
-              font-color: yellow;
+              font-color: red;
               background-color: blue; 
             }
     </style>
@@ -51,7 +51,7 @@
 
                     // if the letter isn't in the word, reduce
                     // the number of tries and check if they lost
-                    } else if (! wordincludes(letter)) {
+                    } else if (! wordincludes(A,C,F,G,H,J,K,L,M,N,O,P,Q,S,T,V,W,X,Y,Z)) {
 
                       // reduce the number of remaining tries by 1
 
@@ -63,7 +63,7 @@
                     // otherwise, put a line through it and
                     // add it to the found letters
                     // and check if the player won or lost
-                    } else {
+                    } else if ( triedletterincludes(BLUEBIRD)) {
 
                       // replace the blanks in the blanks variable 
                       // with the letter that was clicked on
@@ -93,32 +93,32 @@
      <div id="info"></div>
      <div id="word"></div>
      <div id="alphabet"><p>Guess Here</p>
-     <span class="letter" id="A">a</span>
-     <span class="letter" id="B">b</span>
-     <span class="letter" id="C">c</span>
+     <span class="letter" id="a">A</span>
+     <span class="letter" id="b">B</span>
+     <span class="letter" id="c">C</span>
      <span class="letter" id="d">D</span>
      <span class="letter" id="e">E</span>
-     <span class="letter" id="f">f</span>
-     <span class="letter" id="g">g</span>
-     <span class="letter" id="h">h</span>
-     <span class="letter" id="i">i</span>
-     <span class="letter" id="j">j</span>
-     <span class="letter" id="k">k</span>
-     <span class="letter" id="l">l</span>
-     <span class="letter" id="m">m</span>
-     <span class="letter" id="n">n</span>
-     <span class="letter" id="o">o</span>
-     <span class="letter" id="p">p</span>  
-     <span class="letter" id="q">q</span>
-     <span class="letter" id="r">r</span>
-     <span class="letter" id="s">s</span>
-     <span class="letter" id="t">t</span>
-     <span class="letter" id="u">u</span>
-     <span class="letter" id="v">v</span>
-     <span class="letter" id="w">w</span>  
-     <span class="letter" id="x">x</span>
-     <span class="letter" id="y">y</span>
-     <span class="letter" id="z">z</span>  
+     <span class="letter" id="f">F</span>
+     <span class="letter" id="g">G</span>
+     <span class="letter" id="h">H</span>
+     <span class="letter" id="i">I</span>
+     <span class="letter" id="j">J</span>
+     <span class="letter" id="k">K</span>
+     <span class="letter" id="l">L</span>
+     <span class="letter" id="m">M</span>
+     <span class="letter" id="n">N</span>
+     <span class="letter" id="o">O</span>
+     <span class="letter" id="p">P</span>  
+     <span class="letter" id="q">Q</span>
+     <span class="letter" id="r">R</span>
+     <span class="letter" id="s">S</span>
+     <span class="letter" id="t">T</span>
+     <span class="letter" id="u">U</span>
+     <span class="letter" id="v">V</span>
+     <span class="letter" id="w">W</span>  
+     <span class="letter" id="x">X</span>
+     <span class="letter" id="y">Y</span>
+     <span class="letter" id="z">Z</span>  
      </div>
   </body>
 </html>
