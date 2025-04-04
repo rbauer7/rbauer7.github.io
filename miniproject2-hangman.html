@@ -18,11 +18,11 @@
          $(document)ready.click( function() {
               // this is the secret word!
               word =  "bluebird";
-              blank = "- - - - - - - -";
+              blank = "--------";
               $("#word")text(blank);
 
               // this is the list of letters that have been tried
-              triedLetters = "";
+              triedLetters = "a,d,i,l,m,q";
 
               // this is the number of tries left
               tries = 10;
@@ -33,7 +33,7 @@
               gameLost = false;
                    
               // when a user clicks on a letter... this is where everything happens!
-              $("letter").click( function() {
+              $("letter").click() function() {
 
                   // check if the game has been won or lost
                   if (gameWon != true && gameLost != true) {
